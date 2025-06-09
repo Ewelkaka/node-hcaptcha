@@ -1,28 +1,28 @@
-# hcaptcha
+# Hcaptcha
 
-Verify hCaptcha token validity; simply w/ no dependencies.
+Sprawdź ważność tokena Hcaptcha; po prostu bez zależności.
 
-## Install
+## Zainstalować
 
 ```
-npm install --save hcaptcha
+Instalacja npm -Save hcaptcha
 ```
 
-## Usage
+## Stosowanie
 
-```js
-const {verify} = require('hcaptcha');
+```JS
+const {verify} = wymaga („hcaptcha”);
 
-const secret = 'my hcaptcha secret from hcaptcha.com';
-const token = 'token from widget';
+const secret = „My Hcaptcha Secret z hcaptcha.com”;
+const token = „token z widżetu”;
 
-verify(secret, token)
-  .then((data) => {
+weryfikować (tajny, token)
+  .Ten ((data) => {
     if (data.success === true) {
-      console.log('success!', data);
-    } else {
-      console.log('verification failed');
+      console.log („Success!”, Data);
+    } w przeciwnym razie {
+      console.log („weryfikacja nie powiodła się”);
     }
   })
-  .catch(console.error);
+  .Catch (console.error);
 ```
